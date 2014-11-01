@@ -17,7 +17,7 @@ html, body {
     width: 130px;
     height: 130px;
     border-radius: 2px;
-    margin-left: 24%;
+    margin-left: 20%;
     margin-top: 10px;
     box-shadow: 3px 3px 3px black;
 }
@@ -46,9 +46,15 @@ html, body {
 }
 #MainContent {
     margin-top: 170px;
-    padding: 20px;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;  
-    border-bottom: 1px dotted #dee4e8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: auto;
+    margin-left: 20%;
+    margin-right: 20%;  
+    border-bottom: 1px dotted #d4e3ef;
+    overflow: hidden;
+}
+.MainImg {
+    float: left;
+    margin-right: 20px;
 }
