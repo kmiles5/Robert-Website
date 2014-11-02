@@ -1,51 +1,67 @@
 html, body {
+    font-family: tahoma;
     height: 100%;
+    width: 100%;
     padding: 0px;
     margin: 0px;
 }
-#MainWrapper { 
-    font-family: tahoma;
+#MainWrapper {   
     min-height: 100%;
     height: auto !important;
     height: 100%;
+    width: 100%;
+    width: auto !important;
     margin: 0 auto -250px;
 }
 #MainHeader {
     background-image: url("../images/top.png");
     background-repeat: repeat-x;
     height: 150px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    width: auto !important;
     padding: 10px;
+    padding-right: 0;
+    padding-left: 0;
 }
 #MainLogo {
+    z-index: 1;
     position: relative;
     height: 130px;
     border-radius: 2px;
-    width: 1000px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
 }
 #TopLine {
+    z-index: 0;
     position: absolute;
-    overflow: hidden;
     background-color: #dbe5ec;
     height: 3px;
     top: 100px;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: 0px;
+    margin-right: 0px;
     width: 100%;
+    padding-right: 0;
+    padding-left: 0;
     box-shadow: 1px 2px 1px black;
 }
-ul {
+#MainNav {
     float: right;
     margin-top: 95px;
     display: inline;
 }
-li {
+#MainNav li {
+    background: transparent url("../images/linksep.png") no-repeat scroll right center;
     padding-left: 10px;
     padding-right: 10px;
     letter-spacing: 1px;
     display: inline;
+}
+#MainNav li:last-child {
+    background: none;
 }
 .MainLink {
     font-size: 18px;
@@ -58,18 +74,22 @@ li {
 }
 #MainContent {
     padding: 10px;
-    padding-top: 20px;
-    width: 1000px;
+    width: 800px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
+}
+.ContentBox {
+    padding: 10px;
     border-bottom: 1px dotted #d3dbec;
-    overflow: hidden;
 }
 .MainImg {
     float: left;
     margin-right: 20px;
+}
+.MainImgRight {
+    float: right;
 }
 #MainFooter {
     background-image: url(../images/bottom.png);
@@ -88,12 +108,14 @@ li {
     height: 250px;
 }
 #footerText {
-    width: 1000px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    padding: 0;    
+    padding: 5px;    
 }
 .alignRight {
+    padding: 0;
+    margin: 0;
     text-align: right;
 }
