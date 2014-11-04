@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Abel);
 html, body {
-    background: #eaeaea url(../images/background1.png);
+    background: #eaeaea url(../images/background1.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
     height: 100%;
@@ -47,19 +51,42 @@ html, body {
 }
 #MainNav {
     float: right;
-    margin-top: 70px;
+    margin-top: -40px;
     display: inline;
 }
-#MainNav li {
+#MainNav a::before {
+    position: relative;
+    top: 15px;
+    left: 25px;
+    color: transparent;
+    content: '•';
+    text-shadow: 0 0 transparent;
+    font-size: 1.2em;
+    -webkit-transition: text-shadow 0.3s, color 0.3s;
+    -moz-transition: text-shadow 0.3s, color 0.3s;
+    transition: text-shadow 0.3s, color 0.3s;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+#MainNav a:hover::before,
+#MainNav a:focus::before {
+	color: #fff;
+	text-shadow: 10px 0 #fff, -10px 0 #fff;
+}
+#MainNav a:hover,
+#MainNav a:focus {
+	color: #95b6cb;
+}
+#MainNav:last-child {
+    background: none;
+}
+.MainLink {
     background: transparent url("../images/linksep.png") no-repeat scroll right center;
     padding: 0 10px;
     letter-spacing: 1px;
     display: inline;
-}
-#MainNav li:last-child {
-    background: none;
-}
-.MainLink {
     font-size: 18px;
     letter-spacing: 1px;
     color: #dbe5ec;
@@ -96,7 +123,6 @@ html, body {
     height: 150px;
     margin: 0px;
 }
-
 #SubFooter {
     height: 100px;
     min-width: 900px;
@@ -115,6 +141,15 @@ html, body {
     padding: 0;
     margin: 0;
     text-align: right;
+}
+#MainTitle {
+    font-family: 'Abel', sans-serif;
+    color: #dbe5ec;
+    padding: 0;
+    float: right;
+    margin-top: 0px;
+    margin-left: 0px;
+    text-shadow: 3px 3px black;
 }
 h1, h2, h3, h4, h5 {
     color: #375584;
