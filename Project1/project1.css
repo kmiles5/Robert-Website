@@ -27,15 +27,16 @@ html, body {
 #MainLogo {
     z-index: 1;
     position: relative;
-    height: 130px;
+    height: 100px;
     border-radius: 2px;
     width: 800px;
-    margin: 10px auto 0;
+    margin: 25px auto 0;
+    padding: -10px -10px;
 }
 #TopLine {
     z-index: 0;
     position: absolute; 
-    top: 100px;
+    top: 85px;
     height: 3px;   
     min-width: 900px;
     width: 100%;
@@ -46,7 +47,7 @@ html, body {
 }
 #MainNav {
     float: right;
-    margin-top: 95px;
+    margin-top: 70px;
     display: inline;
 }
 #MainNav li {
