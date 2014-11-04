@@ -59,7 +59,7 @@ html, body {
     top: 15px;
     left: 25px;
     color: transparent;
-    content: '•';
+    content: '-';
     text-shadow: 0 0 transparent;
     font-size: 1.2em;
     -webkit-transition: text-shadow 0.3s, color 0.3s;
